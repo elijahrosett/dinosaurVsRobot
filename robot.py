@@ -10,4 +10,4 @@ class Robot:
         dinosaur.health -= self.attack_power
         return dinosaur.health
 
-ags = Weapon("armadyl Godsword", 25)
+ags = Weapon("armadyl Godsword", 17)
