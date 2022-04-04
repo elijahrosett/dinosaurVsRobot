@@ -1,6 +1,6 @@
 import random
 from weapon import Weapon
-ags = Weapon("Armadyl Godsword", 1)
+ags = Weapon("Armadyl Godsword", 30)
 dds = Weapon("Dragon dagger", 10)
 d_claws = Weapon("d claws", 30)
 weapon_list = [ags, dds, d_claws]

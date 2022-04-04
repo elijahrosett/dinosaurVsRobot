@@ -23,6 +23,8 @@ class Battlefield:
             else:
                 robot.attack_random_weapon(dinosaur)
                 print(F"{robot.name} has attacked {dinosaur.name}, {dinosaur.name} has {dinosaur.health} health remaining.")
+                if dinosaur.health <=0:
+                    break
                 dinosaur.attack(robot)
                 print(F"{dinosaur.name} has attacked {robot.name}, {robot.name} has {robot.health} health remaining.")
 
