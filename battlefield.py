@@ -21,7 +21,7 @@ class Battlefield:
             if robot.health <= 0 or dinosaur.health <= 0:
                 keep_fighting = False
             else:
-                robot.attack(dinosaur)
+                robot.attack_random_weapon(dinosaur)
                 print(F"{robot.name} has attacked {dinosaur.name}, {dinosaur.name} has {dinosaur.health} health remaining.")
                 dinosaur.attack(robot)
                 print(F"{dinosaur.name} has attacked {robot.name}, {robot.name} has {robot.health} health remaining.")
