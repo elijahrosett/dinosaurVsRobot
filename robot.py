@@ -1,6 +1,6 @@
 import random
 from weapon import Weapon
-ags = Weapon("Armadyl Godsword", 30)
+ags = Weapon("Armadyl Godsword", 1)
 dds = Weapon("Dragon dagger", 10)
 d_claws = Weapon("d claws", 30)
 weapon_list = [ags, dds, d_claws]
@@ -10,6 +10,7 @@ class Robot:
         self.name = name
         self.active_weapon = random.choice(weapon_list)
         self.health = 100
+        self.fleet = []
         
    
     def attack(self, dinosaur):
