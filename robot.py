@@ -9,7 +9,7 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.active_weapon = random.choice(weapon_list)
-        self.health = 100
+        self.health = 10
         self.fleet = []
         
    
@@ -20,3 +20,12 @@ class Robot:
     def attack_random_weapon(self, dinosaur):
         self.active_weapon = random.choice(weapon_list)
         dinosaur.health -= self.active_weapon.attack_power
+
+    def attack_random(self, random_player):
+        random_player.health -= self.active_weapon.attack_power
+        return random_player.health
+
+    def attack_random_player(self, list):
+        target = random.choice(list)
+        target.health -= self.active_weapon.attack_power
+        return target.health
