@@ -2,6 +2,6 @@ from battlefield import Battlefield
 
 
 battlefield = Battlefield()
-battlefield.battle_phase_herd_and_fleet()
+battlefield.run_game_herd_and_fleet()
 
 
